@@ -16,7 +16,7 @@ export default function Hero() {
           {/* Tags */}
           <div className="hero-tags">
             <span className="hero-tag green">Open to Internships</span>
-            <span className="hero-tag amber">AI & ML Student</span>
+            <span className="hero-tag amber">AI / ML Student</span>
           </div>
 
           {/* Name */}
@@ -26,7 +26,7 @@ export default function Hero() {
           </h1>
 
           {/* Title */}
-          <p className="hero-title">AI & Machine Learning Student · Full-Stack Developer</p>
+          <p className="hero-title">AI and Machine Learning Student · Full-Stack Developer</p>
 
           {/* Description */}
           <p className="hero-desc">

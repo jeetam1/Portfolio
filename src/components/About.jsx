@@ -5,7 +5,7 @@ const interests = [
   'Machine Learning',
   'Full-Stack Web Development',
   'Django Development',
-  'Data Structures & Algorithms',
+  'Data Structures and Algorithms',
   'Problem Solving',
 ];
 

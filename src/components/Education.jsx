@@ -48,7 +48,7 @@ function Education() {
               </svg>
             </div>
             <h3 className="edu-degree">Bachelor of Technology (B.Tech)</h3>
-            <p className="edu-field">Computer Science Engineering (AI & ML)</p>
+            <p className="edu-field">Computer Science Engineering (AI / ML)</p>
             <p className="edu-university">Poornima University</p>
             <span className="edu-status">Undergraduate Student (Ongoing)</span>
             <div className="edu-focus-areas">

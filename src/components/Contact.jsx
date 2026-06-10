@@ -100,9 +100,9 @@ function Contact() {
               </div>
             </a>
 
-            {/* Follow & Connect */}
+            {/* Follow and Connect */}
             <div className="contact-follow-section">
-              <span className="contact-follow-label">FOLLOW & CONNECT</span>
+              <span className="contact-follow-label">FOLLOW AND CONNECT</span>
               <div className="contact-follow-links">
                 <a
                   href={linkedinUrl}
