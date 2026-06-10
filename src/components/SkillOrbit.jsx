@@ -56,6 +56,16 @@ export default function SkillOrbit() {
       canvas.style.height = height + 'px';
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
+      // Scale node radii down on mobile screens
+      const scale = width < 576 ? 0.58 : 1;
+      nodes.forEach((n) => {
+        n.baseRadius = n.size * scale;
+        // If radius hasn't been set yet or is drifting back
+        if (!n.radius || n.radius === n.size) {
+          n.radius = n.baseRadius;
+        }
+      });
+
       // Spread nodes inside the canvas area
       const cx = width / 2;
       const cy = height / 2;
