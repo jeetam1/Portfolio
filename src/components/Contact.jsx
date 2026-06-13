@@ -1,4 +1,3 @@
-import React from 'react';
 
 function Contact() {
   const linkedinUrl = 'https://www.linkedin.com/in/jeetamsinghyadav';
