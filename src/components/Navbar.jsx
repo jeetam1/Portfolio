@@ -80,8 +80,8 @@ export default function Navbar() {
         {/* Right actions */}
         <div className="nav-actions">
           <a
-            href="/Jeetam_Resume.pdf"
-            download="Jeetam_Resume.pdf"
+            href="/Jeetam_Singh_Yadav_Resume.pdf"
+            download="Jeetam_Singh_Yadav_Resume.pdf"
             className="btn btn-accent"
             style={{ padding: '0.5rem 1.2rem', fontSize: '0.85rem' }}
           >
