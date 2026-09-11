@@ -9,8 +9,8 @@ const interests = [
 ];
 
 const stats = [
-  { number: '4+', label: 'Projects Built' },
-  { number: '7+', label: 'Technologies' },
+  { number: '8+', label: 'Projects Built' },
+  { number: '15+', label: 'Technologies' },
   { number: '2028', label: 'B.Tech Graduation' },
 ];
 
