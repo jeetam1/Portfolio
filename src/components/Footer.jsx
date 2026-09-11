@@ -102,9 +102,6 @@ export default function Footer() {
           <p className="footer-copyright">
             © {currentYear} Jeetam Singh Yadav. All rights reserved.
           </p>
-          <p className="footer-built-with">
-            Designed & built with <span style={{ color: 'var(--accent-primary)' }}>React</span> + <span style={{ color: 'var(--accent-secondary)' }}>Vite</span>
-          </p>
           <button className="back-to-top" onClick={handleScrollToTop}>
             ↑ Back to Top
           </button>

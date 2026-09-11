@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const certificatesData = [
   {
@@ -66,9 +66,40 @@ const certificatesData = [
 
 export default function Certificates() {
   const [selectedCert, setSelectedCert] = useState(null);
+  const [isSlidingDown, setIsSlidingDown] = useState(false);
+
+  useEffect(() => {
+    const handleHash = () => {
+      if (window.location.hash === '#certifications') {
+        const el = document.getElementById('certifications');
+        if (el) {
+          setTimeout(() => {
+            const navbarHeight = 72;
+            const elementPosition = el.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth',
+            });
+
+            setIsSlidingDown(true);
+            setTimeout(() => setIsSlidingDown(false), 2500);
+          }, 100);
+        }
+      }
+    };
+
+    handleHash();
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
+  }, []);
 
   return (
-    <section id="certifications" className="certificates-section">
+    <section
+      id="certifications"
+      className={`certificates-section ${isSlidingDown ? 'certificates-slide-down' : ''}`}
+    >
       <div className="content-wrapper">
         <span className="section-tag">Verified Achievements</span>
         <h2 className="section-title">Certifications</h2>
