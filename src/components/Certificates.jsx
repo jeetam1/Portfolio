@@ -129,7 +129,7 @@ export default function Certificates() {
 
                 {cert.certNumber && (
                   <p className="cert-id-text">
-                    ID: <code>{cert.certNumber.slice(0, 16)}...</code>
+                    ID: <code>{cert.certNumber}</code>
                   </p>
                 )}
 
